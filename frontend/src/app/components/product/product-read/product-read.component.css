@@ -1,3 +1,13 @@
-.div-product-read{
+.div-product-read {
     margin-top: 10px;
+}
+
+i.edit {
+    color: #210fef;
+}
+
+
+i.delete {
+    margin: 10px;
+    color: #e61313;
 }
