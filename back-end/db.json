@@ -1,16 +1,6 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "caneta",
-      "price": 5.89
-    },
-    {
-      "id": 2,
-      "name": "Caneta 02",
-      "price": 10.89
-    },
-    {
       "id": 3,
       "name": "Lapis",
       "price": 1
@@ -21,7 +11,14 @@
       "price": 0.5
     },
     {
-      "id": 5
+      "name": "Davi 12",
+      "price": "9.1",
+      "id": 11
+    },
+    {
+      "name": "dsad",
+      "price": -2,
+      "id": 17
     }
   ]
 }
