@@ -11,14 +11,39 @@ import { NavComponent } from "./components/template/nav/nav.component";
 
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatListModule } from "@angular/material/list";
-import { HomeComponent } from './views/home/home.component';
-import {MatCardModule} from "@angular/material/card";
-import { ProductCrudComponent } from './views/product-crud/product-crud.component';
-import { RedDirective } from './directives/red.directive';
-import { ForDirective } from './directives/for.directive';
+import { HomeComponent } from "./views/home/home.component";
+import { MatCardModule } from "@angular/material/card";
+import { ProductCrudComponent } from "./views/product-crud/product-crud.component";
+import { RedDirective } from "./directives/red.directive";
+import { ForDirective } from "./directives/for.directive";
+import { ProductCreateComponent } from "./components/product/product-create/product-create.component";
+import { MatButtonModule } from "@angular/material/button";
+import { MatSnackBarModule } from "@angular/material/snack-bar";
+
+import { HttpClientModule } from "@angular/common/http";
+import { FormsModule } from "@angular/forms";
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatInputModule } from "@angular/material/input";
+import { ProductReadComponent } from './components/product/product-read/product-read.component';
+import { ProductReadTemplateComponent } from './components/product/product-read-template/product-read-template.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, NavComponent, HomeComponent, ProductCrudComponent, RedDirective, ForDirective],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    NavComponent,
+    HomeComponent,
+    ProductCrudComponent,
+    RedDirective,
+    ForDirective,
+    ProductCreateComponent,
+    ProductReadComponent,
+    ProductReadTemplateComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -26,7 +51,16 @@ import { ForDirective } from './directives/for.directive';
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule,
+    MatSnackBarModule,
+    HttpClientModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
